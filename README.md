@@ -7,7 +7,7 @@
 ## 🎯 Objetivo
 Prevenir emergencias de salud ante eventos climáticos extremos mediante alertas tempranas y recomendaciones directas para la comunidad.
 
-#📋 Lista de Control de Pruebas (Test Checklist)
+### 📋 Lista de Control de Pruebas (Test Checklist)
 1. Funcionalidad (Prioridad: 🔴 Alta)
 Resultado esperado: La aplicación se conecta a la API y muestra la temperatura actual de Neuquén con su mensaje correspondiente.
 
