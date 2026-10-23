@@ -1,32 +1,36 @@
 # 🩺 BioClimate Alert
 
-> Una app web en Python que avisa sobre olas de calor y riesgos para la salud por el cambio climático.
+> Una aplicación web simple en Python que monitorea el clima en tiempo real para alertar a personas vulnerables sobre olas de calor y riesgos ambientales para la salud.
 
-## 🚀 ¿Qué hace?
-Monitorea el clima en tiempo real para proteger a personas vulnerables (con asma, alergias o problemas cardíacos) de temperaturas extremas.
+---
 
-📋 Lista de Control de Pruebas: BioClimate Alert
+## 🎯 Objetivo
+Prevenir emergencias de salud ante eventos climáticos extremos mediante alertas tempranas y recomendaciones directas para la comunidad.
+
+#📋 Lista de Control de Pruebas (Test Checklist)
 1. Funcionalidad (Prioridad: 🔴 Alta)
-Resultado esperado: La aplicación se conecta a la API de clima y muestra la temperatura actual de Neuquén correctamente.
+Resultado esperado: La aplicación se conecta a la API y muestra la temperatura actual de Neuquén con su mensaje correspondiente.
 
-Tareas a probar:
+Tareas de prueba:
 
-[ ] Ejecutar el servidor en Python sin errores.
+[ ] El servidor ejecuta sin errores (python app.py).
 
-[ ] Comprobar que la temperatura en la web cambia según los datos reales.
+[ ] La temperatura se obtiene y muestra correctamente en pantalla.
 
-2. Interfaz de Usuario (Prioridad: 🟡 Media)
-Resultado esperado: La página se ve ordenada, limpia y las alertas se entienden a simple vista.
+[ ] El condicional de temperatura cambia el mensaje (alerta si sube de 30°C / seguro si es menor).
 
-Tareas a probar:
+2. Interfaz de Usuario / UI (Prioridad: 🟡 Media)
+Resultado esperado: Diseño limpio, centrado y legible para cualquier usuario.
 
-[ ] Abrir la web en el navegador y verificar que el diseño se vea bien.
+Tareas de prueba:
 
-[ ] Comprobar que el texto de alerta y los colores cambian según el clima.
+[ ] La tarjeta y el texto se alinean bien en el navegador.
+
+[ ] Los mensajes de alerta son claros y fáciles de diferenciar.
 
 3. Manejo de Errores (Prioridad: 🟢 Baja)
-Resultado esperado: Si no hay internet o falla la API, la app no se rompe y muestra un valor de respaldo.
+Resultado esperado: La aplicación no se detiene si se interrumpe la conexión con la API de clima.
 
-Tareas a probar:
+Tareas de prueba:
 
-[ ] Simular una falla de conexión para verificar que el sistema sigue funcionando con datos por defecto.
+[ ] Probar el bloque except para verificar que use la temperatura de respaldo si falla la red.
